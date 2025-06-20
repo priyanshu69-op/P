@@ -1,1 +1,77 @@
-# P
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LapataSMP</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0f0f0f;
+      color: #00ffcc;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 100px;
+      margin-bottom: 40px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffff;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 28px;
+      padding: 15px 35px;
+      color: #0f0f0f;
+      background: #00ffcc;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffcc;
+      animation: pulse 2s infinite;
+      transition: 0.3s ease;
+    }
+
+    a:hover {
+      background: #00e6b8;
+      box-shadow: 0 0 25px #00ffcc, 0 0 50px #00ffcc;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px #00ffcc;
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #00ffcc;
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px #00ffcc;
+      }
+    }
+
+    /* Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+  </style>
+</head>
+<body>
+  <h1>LapataSMP</h1>
+  <a href="https://aternos.org" target="_blank">Launch Aternos</a>
+</body>
+</html>
